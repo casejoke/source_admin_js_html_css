@@ -1,0 +1,167 @@
+/* ---------------------------------------------- /*
+ * General styles
+/* ---------------------------------------------- */
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MyriadProRegular", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  background-color: #505260;
+}
+
+a {
+  color: #fa503e;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: #999;
+  }
+}
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0 5px;
+  color: #222;
+  font-weight: normal;
+  font-style: normal;
+}
+
+p{
+  font-size: 18px;
+  .text-info{
+    font-family: "MyriadProSemiBoldItalic";
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+ul{
+  li{
+    font-size: 18px;
+  }
+}
+/* ---------------------------------------------- /*
+ * Main
+/* ---------------------------------------------- */
+
+.module {
+  padding: 120px 0 100px;
+  background: #FFFFFF;
+  -webkit-transition: all 1s ease-in-out 0s;
+     -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+     -o-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s;
+  &.map-block{
+    padding-bottom: 0px!important;
+  }
+}
+
+.module-gray {
+  background: #f8f8f8;
+}
+
+.module-image {
+  padding: 0;
+}
+.callout {
+  background: #222;
+  padding: 30px 0;
+  color: #999;
+    h2 {
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      padding: 10px 25px;
+      font-size: 16px;
+      text-align: center;
+      @media (min-width: @screen-sm-min) {
+        text-align: center;
+        font-size: 20px;
+      }
+      @media (min-width: @screen-md-min) {
+        text-align: left;
+        font-size: 20px;
+      }
+      @media (min-width: @screen-lg-min) {
+        text-align: left;
+        font-size: 20px;
+      }
+    }
+    .callout-btn {
+      text-align: right;
+      .btn {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    
+}
+.callout h1,
+.callout h2,
+.callout h3,
+.callout h4,
+.callout h5,
+.callout h6,
+.module-image,
+.module-image h1,
+.module-image h2,
+.module-image h3,
+.module-image h4,
+.module-image h5,
+.module-image h6 {
+  color: #fff;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.paddingb-none {
+  padding-bottom: 0;
+}
+
+.module-header {
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+.module-header-left {
+  text-align: left;
+}
+
+.module-header-left .module-line {
+  width: inherit;
+  margin: 30px 0;
+}
+
+.module-subtitle {
+  font-family: "MyriadProRegular", serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.module-line {
+  background: #b21918;
+  width: 55px;
+  height: 1px;
+  margin: 30px auto;
+}
+
+.module-icon {
+  font-size: 32px;
+}
+
+.long-down {
+  margin-bottom: 40px;
+}
+

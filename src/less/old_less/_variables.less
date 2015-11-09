@@ -1,0 +1,52 @@
+/*=============================================
+=                Variables                    =
+=============================================*/
+/* colors */
+@brand-d1gitable:   #fbc764;
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@second-color:            #fbc764;
+//** Background color for `<body>`.
+@body-bg:               #fff;
+//** Global text color on `<body>`.
+@text-color:            @gray-dark;
+
+//** Global textual link color.
+@link-color:            @second-color;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+
+
+@btn-yellow-color:               #fff;
+@btn-yellow-bg:                  #fbc764;
+@btn-yellow-border:              darken(@btn-danger-bg, 5%);
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @gray;
+//** `<input>` border color
+@input-border:                   #6ad9c7;
+
+// TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+@input-border-radius:            0px;
+//** Large `.form-control` border radius
+@input-border-radius-large:      @border-radius-large;
+//** Small `.form-control` border radius
+@input-border-radius-small:      @border-radius-small;
+
+//** Border color for inputs on focus
+@input-border-focus:             #6ad9c7;

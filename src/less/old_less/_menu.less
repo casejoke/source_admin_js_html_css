@@ -1,0 +1,219 @@
+.navbar-brand {
+  float: left;
+  .logo {
+    background: url('img/logo.svg') no-repeat top left;
+    background-size: contain;
+    width: 150px;
+    height: 35px;
+    text-indent: 9999px;
+    @media (min-width: @screen-sm-min) {
+      width: 265px;
+      height: 35px;
+    }
+  }
+}
+
+
+.no-svg .navbar-brand {
+  .logo {
+    background-image: url('img/logo.png');
+    width: 265px;
+    height: 35px;
+  }
+}
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100px;
+  width: 100%;
+  font-family: "MyriadProRegular", sans-serif;
+  background: #25aba2;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  &.menu-is-open {
+    -webkit-transform: translateX(-260px);
+    -moz-transform: translateX(-260px);
+    -ms-transform: translateX(-260px);
+    -o-transform: translateX(-260px);
+    transform: translateX(-260px);
+  }
+  .nav-uchebnik{
+    height: 50px;
+     -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+    &.above{
+      background: #34495e;
+    }
+    .nav-note{
+      padding-top: 6px;
+      .line{
+        display: block;
+        font-size: 12px;
+        line-height: 19px;
+        text-transform: none;
+        color: #FFFFFF;
+       @media (min-width: @screen-sm-min) {
+          font-size: 14px;
+        }
+        a{
+          font-family: "MyriadProRegular", sans-serif;
+          color: #fa503e;
+          font-style: normal;
+          font-weight: normal;
+          span{
+            border-bottom: 1px solid #fa503e;
+          }
+          &:hover{
+            span{
+              border-bottom: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+   .nav-registration{
+      float: right;
+      list-style: none;
+      li{
+        float: left;
+        margin-top: 10px;
+        margin-right:3px; 
+        @media (min-width: @screen-sm-min) {
+          margin-right:10px; 
+        }
+      }
+    }
+    .navbar-brand{
+      padding: 15px 0px 9px;
+      float: left;
+      @media (min-width: @screen-sm-min) {
+        padding: 9px 0px;
+      }
+    }
+    .navbar-toggle {
+      float: right;
+      margin-top: 12px;
+      margin-bottom: 10px;
+      width: 38px;
+      height: 27px;
+      cursor: pointer;
+      padding: 0px;
+      border: 0px;
+      @media (min-width: @grid-float-breakpoint) {
+        display: block;
+      }
+
+      &:hover,
+      &:focus {
+        background: none;
+      }
+      span, 
+      span:before, 
+      span:after { 
+        //.border-radius(1px);
+        height: 5px;
+        width: 35px; 
+        background: #FFFFFF; 
+        position: absolute; 
+        display: block; 
+        content: ''; 
+        .transition-transform(0.5s);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+        span{
+          top: 22px;
+          background-color: transparent; 
+        }
+        span:before{
+          top: 0px;
+          .rotate(45deg);
+        }
+        span:after{
+          bottom: 0px;
+          .rotate(-45deg);
+          //.translate(0; 0);
+        }   
+      &.collapsed{
+        //.translate3d(-200px; 0; 0);
+        span{
+          top: 22px;
+          background: #FFFFFF; 
+        }
+        span:before{
+          top: -10px;
+          .rotate(0deg);
+        }
+        span:after{
+          bottom: -10px;
+          .rotate(0deg);
+        }
+      }
+    }
+
+  }
+}
+
+
+
+/* ---------------------------------------------- /*
+ * Scroll to top
+/* ---------------------------------------------- */
+
+.scroll-up {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  bottom: 1.8em;
+  right: 1.8em;
+  a{
+    background-color: rgba(135, 135, 135, 0.5);
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    color: #222;
+    font-size: 14px;
+    line-height: 30px;
+    &:hover,
+    &:active{
+      background-color: rgba(235, 235, 235, .8);
+      color: #222;
+    }
+    i{
+      line-height: 28px;
+    }
+
+  }
+}
+/* ---------------------------------------------- /*
+ * Transition elsements
+/* ---------------------------------------------- */
+
+
+.navbar a,
+.form-control {
+  -webkit-transition: all 0.4s ease-in-out 0s;
+     -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+     -o-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+}

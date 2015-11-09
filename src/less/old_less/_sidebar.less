@@ -1,0 +1,96 @@
+.sidebar{
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  /* the secondary navigation is covered by the main element */
+  z-index: 1;
+  width: 260px;
+  background-color: #222; //darken(#25aba2, 10%);
+  overflow-y: auto;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s .4s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s .4s;
+  transition: transform .4s 0s, visibility 0s .4s;
+  /* this creates the subtle slide in animation of the navigation */
+  -webkit-transform: translateX(80px);
+  -moz-transform: translateX(80px);
+  -ms-transform: translateX(80px);
+  -o-transform: translateX(80px);
+  transform: translateX(80px);
+  &.menu-is-open {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
+    -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
+    transition: transform .4s 0s, visibility 0s 0s;
+    /* smooth the scrolling on touch devices - webkit browsers */
+    -webkit-overflow-scrolling: touch;
+  }
+  ul{
+    list-style: none;
+    padding: 0px;
+    margin: 25px 0px;
+    li{
+      width: 100%;
+      position: relative;
+      padding-left: 30px;
+      a{
+        color: #FFFFFF;
+        line-height: 30px;
+        font-size: 14px;
+        span{
+          width: 10px;
+          height: 10px;
+          background: transparent;
+          display: block;
+          position: absolute;
+          left: 0px;
+          top: 9px;
+        }
+      }
+      &.active{
+        a{
+          color: #fa503e;
+          text-decoration: none;
+          span{
+            background: #fa503e;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.main-content {
+  /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #30ccc0;
+  z-index: 2;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  &.menu-is-open {
+    -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px);
+  }
+}

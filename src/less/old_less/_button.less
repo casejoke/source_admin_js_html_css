@@ -1,0 +1,80 @@
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
+// Danger and error appear as red
+.btn-registation {
+  .button-variant(#2cbdb2; transparent; #2cbdb2);
+  border: 0px;
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn-red {
+  .button-variant(#FFFFFF; #fa503e; #fa503e);
+}
+.btn-green{
+  .button-variant(#FFFFFF; darken(#6ad9c7, 5%); #6ad9c7);
+}
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
+.btn {
+ 
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-transform: uppercase;
+   -webkit-box-shadow: none;
+           box-shadow: none;
+}
+
+.btn-white-outline {
+  .button-variant(#FFFFFF; transparent; #FFFFFF);
+  padding: 7px 12px 4px;
+  background: none;
+ 
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    .box-shadow(none);
+  }
+}
+.btn-white-noline {
+  .button-variant(#FFFFFF; transparent; #FFFFFF);
+  padding: 7px 12px 4px;
+  background: none;
+  outline: 0;
+  border-color: transparent;
+  .box-shadow(none);
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+    outline: 0;
+    .box-shadow(none);
+  }
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    border-color: transparent;
+    .box-shadow(none);
+
+  }
+}
+.btn-red{
+  .button-variant(#ffffff; #ff4343; #ff4343);
+  font-size: 18px;
+  text-transform: uppercase;
+  @media (min-width: @screen-lg-min) {
+       font-size: 22px;
+  }
+ 
+  
+}
+
+

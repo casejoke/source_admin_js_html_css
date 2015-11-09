@@ -1,0 +1,45 @@
+.faq{
+	background: #6ad9c7;
+	h2{
+		color: #FFFFFF;
+	}
+	.panel {
+	  margin-bottom: @line-height-computed;
+	  background-color: transparent;
+	  border: 1px solid transparent;
+	  .box-shadow(none);
+	  color: #FFFFFF;
+	}
+	.panel-title{
+		a{
+			font-size: 22px;
+			font-style: normal;
+    		font-weight: normal;
+    		font-family: "MyriadProBoldItalic";
+    		text-decoration: none;
+    		span{
+    			border-bottom: 1px solid #FFFFFF;
+    		}
+			&:hover,
+			&:focus,
+			&:active{
+				color: #FFFFFF;
+				text-decoration: none;
+				span{
+    			border-bottom: 1px solid transparent;
+    			}
+				
+			}
+		}
+	}
+	.panel-body{
+		p{
+		  margin-left: 30px;
+		  line-height: 17px;
+		  margin-bottom: 5px;
+		}
+	}
+}
+.panel-faq {
+  .panel-variant(transparent; #FFFFFF; transparent; @panel-default-border);
+}

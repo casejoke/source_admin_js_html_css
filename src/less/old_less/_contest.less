@@ -1,0 +1,371 @@
+.contest{
+    background: #6ad9c7;
+    padding-bottom: 0px;
+    position: relative;
+    h2{
+      color: #FFFFFF;
+    }
+    .module-up{
+      position: relative;
+      padding-bottom: 70px;
+      .wave{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 1600px;
+        height: 79px;
+        margin-left: -800px;
+        z-index: 1;
+        background: url('img/wave-1.png') center bottom no-repeat;
+      
+      }
+      .intro-text{
+        position: relative;
+      
+        z-index: 5;
+        p{
+          span{
+            
+
+          }
+        }
+      }
+      
+    }
+    
+    .module-white{
+      position: relative;
+      width: 100%;
+      background: #FFFFFF;
+      padding-top: 50px;
+      padding-bottom: 170px;
+      &.step-1{
+
+      }
+      &.step-2{
+        padding-bottom: 0px;
+      }
+
+      .container{
+        z-index: 2;
+        position: relative;
+      }
+      h3{
+        color: #fb6051;
+      }
+      p{
+        font-size: 20px;
+        span{
+          color: #fb6051;
+        }
+      }
+      ul{
+        list-style: none;
+        li{
+          
+          margin-bottom: 10px;
+          min-height: 70px;
+          .tag{
+            color: #2ccfde;
+          }
+          p{
+            font-size: 14px;
+          }
+          &.one-line{
+            p{
+              padding-top: 20px;
+            }
+          }
+          &.second-line{
+            p{
+              padding-top: 20px;
+            }
+          }
+          &.four-line{
+            p{
+              padding-top: 20px;
+            }
+          }
+          .step-one{
+            .sprite(@first-step);
+            display: block;
+            float: left;
+            line-height: 42px;
+             margin: 10px;
+          }
+          .step-second{
+            .sprite(@second-step);
+            display: block;
+            float: left;
+            line-height: 42px;
+             margin: 10px;
+          }
+          .step-three{
+
+            .sprite(@three-step);
+            display: block;
+            float: left;
+            line-height: 42px;
+            margin: 10px;
+          }
+          .step-four{
+            .sprite(@four-step);
+            display: block;
+            float: left;
+            line-height: 42px;
+             margin: 10px;
+          }
+        }
+      }
+      .gopro{
+        .sprite(@go-pro);
+        margin: 0 auto;
+      }
+
+      .action-btn{
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .medal{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 1500px;
+        height: 259px;
+        margin-left: -750px;
+        z-index: 1;
+        background: url('img/medal.png') center bottom no-repeat;
+        
+      }
+      .form-horizontal{
+
+        .label-step{
+          color: #6ad9c7;
+          margin-bottom: 40px;
+          .main-canvas{
+            position: relative;
+            .nav_btn{
+              
+              cursor: pointer;
+              margin-top: 75px;
+              font-size: 35px;
+              position: absolute;
+              display: block;
+              color: #6ad9c7;
+              z-index: 100;
+              @media (min-width: @screen-sm-min) {
+                font-size: 50px;
+                margin-top: 150px;
+              }
+              
+
+              &.chprev_owl{
+                left: 0px;
+              }
+              &.chnext_owl{
+                right: 0px;
+              }
+            }
+          }
+          
+          &.finish-image{
+            h2{
+              color: #6ad9c7;
+            }
+            .socials{
+              margin-top: 20px;
+              a{
+                font-size: 40px;
+                margin: 15px;
+                color: #FFFFFF;
+                padding: 10px;
+                border-radius:5px; 
+                &.vk{
+                  color: #FFFFFF;
+                  background: #6996c7;
+                }
+                &.facebook{
+                  color: #FFFFFF;
+                  background: #496194;
+                    padding: 10px 20px;
+                }
+                &:hover{
+                  &.vk{
+                    background: darken(#6996c7, 10%);
+                  }
+                  &.facebook{
+                    background: darken(#496194, 10%);
+                  }
+                }
+              }
+            }
+          }
+          p{
+            color: lighten(#000, 10%);
+          }
+          .step-num{
+            p{
+              margin: 0px;
+              padding: 0px;
+              line-height: 56px;
+              text-transform: uppercase;
+              color: #6ad9c7;
+            }
+          }
+          .canvas{
+            position: relative;
+            margin: 0 auto;
+            width: 300px;
+            @media (min-width: @screen-sm-min) {
+              width: 473px;
+              height: 272px;
+            }
+
+            .white-block{
+              width: 100%;
+            }
+            .action-block{
+              position: absolute;
+              z-index: 2;
+              width: 80%;
+              height: 77%;
+              left: 10%;
+              top: 10%;
+              @media (min-width: @screen-sm-min) {
+                height: 88%; 
+                width: 90%;
+                height: 83%;
+                left: 5%;
+                top: 8%;
+              }
+              .fun-canvas{
+                position: absolute;
+                left: 8%;
+                top: 29%;
+                width: 84%;
+                height: 34px;
+                text-align: center;
+                overflow: hidden;
+                word-wrap: break-word;
+                font-size: 12px;
+                color: #fb6051;
+                @media (min-width: @screen-sm-min) {
+                  font-size: 20px;
+                    top: 32%;
+                    width: 85%;
+                    height: 57px;
+                }
+              }
+              .name-canvas{
+                position: absolute;
+                bottom: 1%;
+                left: 21%;
+                font-size: 10px;
+                color: #000000;
+                .name-user{
+                  color: #6ad9c7;
+                }
+                @media (min-width: @screen-sm-min) {
+                  bottom: 2%;
+                  left: 21%;
+                  font-size: 12px;
+                }
+              }
+            }
+            #canvas-owl {
+              position: relative;
+              z-index: 1;
+              background: #FFF;
+              .owl-controls{
+                  text-align: center;
+              }
+              .owl-item{
+                color: #000000;
+                text-align: center;
+                .card{
+                  margin: 0 auto;
+                  padding: 0px;
+                  
+                    img{
+                      width: 100%;
+                    }
+                    
+                  
+                }
+              }
+            }
+          }
+          .outcanvas{
+            display: none;
+          }
+          .out-image{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+          }
+          
+          .contact-line{
+            label{
+              margin-top: 20px;
+            }
+          }
+        }
+        textarea{
+          resize:none;
+        }
+        .step-one{
+          .sprite(@first-step);
+          display: block;
+          float: right;
+        }
+        .step-second{
+          .sprite(@second-step);
+          display: block;
+          float: right;
+        }
+        .step-three{
+          .sprite(@three-step);
+          display: block;
+          float: right;
+        }
+      }
+    }
+
+    .gallery{
+      background: #FFFFFF;
+      .module-title{
+        color: #000000;
+      }
+      .nav_btn{
+        font-size: 50px;
+        cursor: pointer;
+        margin-top: 0px;
+        position: relative;
+        display: block;
+        color: #6ad9c7;
+      }
+        #gallery-owl {
+          margin-bottom: 100px;
+          .owl-controls{
+              margin-top: 50%;
+              text-align: center;
+
+          }
+          .owl-item{
+            color: #000000;
+            text-align: center;
+            .card{
+              margin: 0 auto;
+              padding: 20px;
+              a{
+                img{
+                  width: 100%;
+                  border:2px solid #2ccfde;
+                }
+                
+              }
+            }
+          }
+        }
+    }
+}

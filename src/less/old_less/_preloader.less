@@ -1,0 +1,32 @@
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+.preloader {
+  background: #FFF;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  .status-mes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -32px;
+    height: 64px;
+    width: 64px;
+    color: #FFCC00;
+    fill:#FFCC00;
+  }
+
+}
+
+.no-svg {
+  .status-mes {
+    background-image: url("img/preloader.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
