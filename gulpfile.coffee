@@ -40,7 +40,7 @@ gulp.task 'js', ->
     'bower_components/bootstrap/js/tab.js',
     'bower_components/bootstrap/js/affix.js',
     'bower_components/summernote/dist/summernote.js',
-    'bower_components/moment/src/moment.js',
+    'bower_components/moment/moment.js',
     #'bower_components/moment/locale/ru.js',
     'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
     'bower_components/jquery.nicescroll/jquery.nicescroll.js',
